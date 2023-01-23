@@ -1,1 +1,113 @@
-@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap);body{margin:0;padding:0;height:320vh;background-color:#f8fdfe}header{display:flex;position:fixed;width:100%;height:12%;grid-area:header;background-color:#537261;z-index:20}h1{position:absolute;left:45%;justify-content:center;font-family:fantasy;font-size:40px;color:#960014;order:2}#wrapper{height:100%;width:100%;margin-left:auto;margin-right:auto;display:grid;grid-template-columns:20% 20% 20% 20% 20%;grid-template-rows:3% 30% 12% 12% 24% 12% 7%;grid-template-areas:"header header header header header" "main main main main main" "ett ett ett två två" "ett ett ett tre tre" "fyra fyra fyra fyra fyra" "sju sju sju sju sju" "footer footer footer footer footer"}
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap);
+body {
+    margin: 0;
+    padding: 0;
+    height: 250vh;
+    background-color: #f8fdfe;
+}
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    grid-area: header;
+    background-color: #537261;
+    z-index: 20;
+}
+h1 {
+    position: absolute;
+    left: 45%;
+    justify-content: center;
+    font-family: fantasy;
+    font-size: 40px;
+    color: #960014;
+    order: 2;
+}
+* > header {
+    font-family: fantasy;
+    box-sizing: border-box;
+    color: #960014;
+    font-size: 25px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 2% 0 0 2%;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#wrapper {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 3% min-content min-content min-content 42% 12% 7%;
+    grid-template-areas: "header header header header header"
+    "main main main main main"
+    "ett ett ett två två"
+    "ett ett ett tre tre"
+    "fyra fyra fyra fyra fyra"
+    "fem fem fem fem fem"
+    "footer footer footer footer footer";
+}
+@media (max-width: 950px) {
+body{
+  height: 300vh;
+}
+  .menu {
+      margin-top: 4%;
+}
+#wrapper {
+    grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+    grid-template-rows: 3% min-content min-content min-content 42% 8% 5%;
+    grid-template-areas:
+    "header header header header header header"
+    "main main main main main main"
+    "ett ett ett ett ett ett"
+    "två två två tre tre tre"
+    "fyra fyra fyra fyra fyra fyra"
+    "fem fem fem fem fem fem"
+    "footer footer footer footer footer footer";
+  }
+}
+@media (max-width: 700px) {
+  body {
+      height: 220vh;
+}
+.menu {
+    margin-top: 50px;
+  }
+
+  #wrapper {
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-rows: 3% min-content min-content min-content 15% 56% 2% 8%;
+      grid-template-areas:
+      "header header header header header"
+      "main main main main main"
+      "ett ett ett ett ett"
+      "två två två två två"
+      "tre tre tre tre tre"
+      "fyra fyra fyra fyra fyra"
+      "fem fem fem fem fem"
+      "footer footer footer footer footer";
+  }
+}
+@media (max-width: 600px) {
+    #wrapper {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 3% min-content min-content min-content 13% 68% 2% 8%;
+        grid-template-areas:
+        "header header header header header"
+        "main main main main main"
+        "ett ett ett ett ett"
+        "två två två två två"
+        "tre tre tre tre tre"
+        "fyra fyra fyra fyra fyra"
+        "fem fem fem fem fem"
+        "footer footer footer footer footer";
+    }
+}
