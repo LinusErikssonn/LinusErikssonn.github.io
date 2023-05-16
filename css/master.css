@@ -118,17 +118,32 @@ table {
 
 body {
   padding: 0px;
-  height: 100vh;
+  height: 300vh;
 }
 
 header {
   grid-area: header;
   background-color: bisque;
+  height: 10%;
+  width: 100%;
+  position: fixed;
+    z-index: 99;
+}
+
+#sidtitel{
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Abel';
 }
 
 nav {
-  grid-area: nav;
   background-color: blueviolet;
+  position: fixed;
+  top: 10%;
+  height: 7%;
+  width: 100%;
+  z-index: 99;
 }
 
 main {
@@ -136,11 +151,21 @@ main {
   background-color: aqua;
 }
 
+
+
+
+
+
+#ruta2{
+grid-area: ruta2;
+
+}
+
 .bildcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 12%;
 }
 
 .priscontainer {
@@ -159,6 +184,14 @@ main {
   display: inline;
 }
 
+.lagerstatustext {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 5%;
+}
+
+
 #kebabbild {
   order: 1;
 }
@@ -174,6 +207,7 @@ main {
   order: 2;
   margin-left: 5%;
 }
+
 #pris2 {
   width: 300px;
   height: 50px;
@@ -181,10 +215,12 @@ main {
   margin-left: 5%;
   color: wheat;
 }
+
 #kebabbild3 {
   order: 3;
   margin-left: 5%;
 }
+
 #pris3 {
   width: 300px;
   height: 50px;
@@ -193,87 +229,98 @@ main {
   color: wheat;
 }
 
-#button1 {
-  position: relative;
-  background-color: grey;
-  border: none;
-  color: white;
-  padding: 3px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin-left: 30%;
+#ruta3{
+  grid-area: ruta3;
+  background-color: aliceblue;
 }
 
-#button2 {
+
+.ruta3container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12%;
+}
+
+.kampanjcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5%;
+}
+
+.kampanjtext {
   position: relative;
-  background-color: grey;
-  border: none;
-  color: white;
-  padding: 3px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
+  top: 10%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center; 
+  display: inline;
+}
+
+
+
+
+#kampanj1 {
+  width: 300px;
+height: 110px;
+  background-color: black;
+  color: wheat;
+  justify-content: center;
+  display: flex;
+}
+
+
+
+#kampanjbild2 {
   margin-left: 5%;
 }
 
-#button3 {
-  position: relative;
-  background-color: grey;
-  border: none;
-  color: white;
-  padding: 3px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin-left: 30%;
+#kampanj2 {
+  width: 300px;
+  height: 110px;
+  background-color: black;
+  margin-left:  5%;
+  color: wheat;
+  justify-content: center;
+    display: flex;
 }
 
-#button4 {
-  position: relative;
-  background-color: grey;
-  border: none;
-  color: white;
-  padding: 3px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
+#kampanjbild3 {
+
   margin-left: 5%;
 }
 
-#button5 {
-  position: relative;
-  background-color: grey;
-  border: none;
-  color: white;
-  padding: 3px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin-left: 30%;
+#kampanj3 {
+  width: 300px;
+height: 110px;
+  background-color: black;
+  margin-left: 5%;
+  color: wheat;
+  justify-content: center;
+    display: flex;
 }
 
-#button6 {
-  position: relative;
-  background-color: grey;
-  border: none;
-  color: white;
-  padding: 3px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin-left: 5%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
   grid-area: footer;
-  background-color: aliceblue;
+
 }
 
 #wrapper {
@@ -281,10 +328,12 @@ footer {
   width: 100%;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 10% 7% 73% 10%;
+  grid-template-rows: 3% 2% 30% 30% 30% 5%;
   grid-template-areas:
-    "header header header header header"
-    "nav nav nav nav nav"
+    "- - - - -"
+    "- - - - -"
     "main main main main main"
+    "ruta2 ruta2 ruta2 ruta2 ruta2"
+    "ruta3 ruta3 ruta3 ruta3 ruta3"
     "footer footer footer footer footer";
 }
