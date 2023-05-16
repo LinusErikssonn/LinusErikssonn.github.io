@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "image": "",
+    "name": "kebabpizza",
+    "price": "120",
+    "quantity": 1
+  },
+
+  {
+    "id": 2,
+    "image": "",
+    "name": "choklad",
+    "price": "50",
+    "quantity": 1
+  },
+
+  {
+    "id": 3,
+    "image": "",
+    "name": "hamburgare",
+    "price": "80",
+    "quantity": 1
+  }
+]
