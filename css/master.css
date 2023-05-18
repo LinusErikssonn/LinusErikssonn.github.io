@@ -119,10 +119,11 @@ table {
 body {
   padding: 0px;
   height: 300vh;
+  background-color: rgb(252, 250, 244);
 }
 
 header {
-  background-color: bisque;
+  background-color: rgb(252, 250, 244);
   height: 10%;
   width: 100%;
   position: fixed;
@@ -134,15 +135,17 @@ header {
   font-weight: bold;
   text-align: center;
   font-family: "Abel";
+  margin-top: 0.5%;
 }
 
 nav {
-  background-color: white;
+  background-color: rgb(252, 250, 244);
   position: fixed;
   top: 10%;
   height: 7%;
   width: 100%;
   z-index: 99;
+  border-bottom: 1px solid;
 }
 #navcontainer {
   display: flex;
@@ -153,14 +156,13 @@ nav {
 .navtext {
   font-size: 20px;
   border: solid;
-
-  background-color: white;
   padding: 5px;
   border-radius: 10px;
-  margin-top: 0.75%;
+  margin-top: 1%;
 }
 main {
   grid-area: main;
+  border-bottom: solid;
 }
 
 #slider {
@@ -168,7 +170,7 @@ main {
   margin-top: 18vh;
   margin-left: 15%;
   height: 70vh;
-  width: 69.9%;
+  width: 1332px;
   overflow: hidden;
   position: relative;
 }

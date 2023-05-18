@@ -119,54 +119,6 @@
       </main>
 
       <div id="ruta2">
-        <div class="bildcontainer">
-          <img
-            id="kebabbild"
-            src="img/kebab.jpg"
-            alt="kebabpizza"
-            width="300px"
-            height="300px"
-          />
-
-          <img
-            id="kebabbild2"
-            src="img/choklad.jpg"
-            alt="kebabpizza"
-            width="300px"
-            height="300px"
-          />
-
-          <img
-            id="kebabbild3"
-            src="img/hamburgare.jpg"
-            alt="kebabpizza"
-            width="300px"
-            height="300px"
-          />
-        </div>
-
-        <div class="priscontainer">
-          <div id="pris1">
-            <p class="pristext">120kr</p>
-
-            <p class="lagerstatustext">Tillfälligt slut i lager</p>
-          </div>
-
-          <div id="pris2">
-            <p class="pristext">50kr</p>
-
-            <p class="lagerstatustext">Tillfälligt slut i lager</p>
-          </div>
-
-          <div id="pris3">
-            <p class="pristext">80kr</p>
-
-            <p class="lagerstatustext">Tillfälligt slut i lager</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="ruta3">
         <div class="ruta3container">
           <img
             id="kampanjbild1"
@@ -217,6 +169,54 @@
         </div>
       </div>
 
+      <div id="ruta3">
+        <div class="bildcontainer">
+          <img
+            id="kebabbild"
+            src="img/kebab.jpg"
+            alt="kebabpizza"
+            width="300px"
+            height="300px"
+          />
+
+          <img
+            id="kebabbild2"
+            src="img/choklad.jpg"
+            alt="kebabpizza"
+            width="300px"
+            height="300px"
+          />
+
+          <img
+            id="kebabbild3"
+            src="img/hamburgare.jpg"
+            alt="kebabpizza"
+            width="300px"
+            height="300px"
+          />
+        </div>
+
+        <div class="priscontainer">
+          <div id="pris1">
+            <p class="pristext">120kr</p>
+
+            <p class="lagerstatustext">Tillfälligt slut i lager</p>
+          </div>
+
+          <div id="pris2">
+            <p class="pristext">50kr</p>
+
+            <p class="lagerstatustext">Tillfälligt slut i lager</p>
+          </div>
+
+          <div id="pris3">
+            <p class="pristext">80kr</p>
+
+            <p class="lagerstatustext">Tillfälligt slut i lager</p>
+          </div>
+        </div>
+      </div>
+
       <footer></footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -242,7 +242,7 @@
       $("#produkter").click(function () {
         $("html,body").animate(
           {
-            scrollTop: $("#ruta2").offset().top,
+            scrollTop: $("#ruta3").offset().top,
           },
           1000
         );
@@ -251,7 +251,7 @@
       $("#kampanjer").click(function () {
         $("html,body").animate(
           {
-            scrollTop: $("#ruta3").offset().top,
+            scrollTop: $("#ruta2").offset().top,
           },
           1000
         );
