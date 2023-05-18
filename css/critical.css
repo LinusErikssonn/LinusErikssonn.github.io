@@ -1,0 +1,404 @@
+body {
+  padding: 0px;
+  height: 300vh;
+  background-color: rgb(252, 250, 244);
+}
+
+header {
+  background-color: rgb(252, 250, 244);
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+
+#sidtitel {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Abel";
+  margin-top: 0.5%;
+}
+
+nav {
+  background-color: rgb(252, 250, 244);
+  position: fixed;
+  top: 10%;
+  height: 7%;
+  width: 100%;
+  z-index: 99;
+  border-bottom: 1px solid;
+}
+#navcontainer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.navtext {
+  font-size: 20px;
+  border: solid;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 1%;
+}
+main {
+  grid-area: main;
+  border-bottom: solid;
+}
+#maincointainer {
+  display: flex;
+  justify-content: center;
+}
+
+#slider {
+  cursor: pointer;
+  margin-top: 14vh;
+  height: 70vh;
+  width: 1332px;
+  overflow: hidden;
+  position: relative;
+  object-fit: contain;
+  aspect-ratio: 333/164;
+}
+
+#jsOff {
+  display: none;
+  border: 2px solid;
+  background-color: rgb(255, 0, 0);
+  font-size: 250%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 800;
+  width: 50%;
+  height: 15%;
+  position: fixed;
+  display: flex;
+  top: 35%;
+  left: 25%;
+  z-index: 10;
+  align-items: center;
+  text-align: center;
+}
+#images {
+  display: flex;
+  position: relative;
+  right: 2664px; /* 2 x picture leng */
+}
+#left {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+}
+#right {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1247px;
+}
+#radiobox {
+  display: none;
+  position: absolute;
+  top: 95%;
+  left: 600.5px;
+}
+input[type="radio"] {
+  cursor: pointer;
+  appearance: unset;
+  padding: 8px;
+  background-color: #091d38;
+  border-radius: 50%;
+}
+input[type="radio"]:checked {
+  background-color: #f2ca82;
+}
+
+#wrapper {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 3% 2% 30% 30% 30% 5%;
+  grid-template-areas:
+    "- - - - -"
+    "- - - - -"
+    "main main main main main"
+    "ruta2 ruta2 ruta2 ruta2 ruta2"
+    "ruta3 ruta3 ruta3 ruta3 ruta3"
+    "footer footer footer footer footer";
+}
+
+@media only screen and (max-width: 1600px) {
+  #slider {
+    width: 932px;
+    height: 460px;
+  }
+
+  #right {
+    left: 850px;
+  }
+  #radiobox {
+    left: 450px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  body {
+    height: 350vh;
+  }
+  #slider {
+    width: 732px;
+    height: 360px;
+  }
+  #right {
+    left: 650px;
+  }
+  #radiobox {
+    left: 366px;
+    top: 335px;
+  }
+
+  .bildcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+  }
+
+  .priscontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5%;
+  }
+
+  .pristext {
+    position: relative;
+    top: 10%;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 2%;
+    display: inline;
+  }
+
+  .lagerstatustext {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 5%;
+  }
+
+  #bild1 {
+    position: relative;
+    left: 175px;
+  }
+
+  #pris1 {
+    position: relative;
+    left: 175px;
+  }
+
+  #bild2 {
+    position: relative;
+    left: 175px;
+  }
+
+  #pris2 {
+    position: relative;
+    left: 175px;
+  }
+
+  #bild3 {
+    position: relative;
+    top: 370px;
+    right: 350px;
+  }
+
+  #pris3 {
+    position: relative;
+    top: 375px;
+    right: 350px;
+  }
+
+  #kampanj1 {
+    position: relative;
+    left: 175px;
+  }
+  #kampanjbild1 {
+    position: relative;
+    left: 175px;
+  }
+
+  #kampanj2 {
+    position: relative;
+    left: 175px;
+  }
+  #kampanjbild2 {
+    position: relative;
+    left: 175px;
+  }
+
+  #kampanj3 {
+    position: relative;
+    top: 375px;
+    right: 350px;
+  }
+  #kampanjbild3 {
+    position: relative;
+    top: 375px;
+    right: 350px;
+  }
+
+  #wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 3% 2% 20% 35% 35% 5%;
+    grid-template-areas:
+      "- - - - - -"
+      "- - - - - -"
+      "main main main main main main"
+      "ruta2 ruta2 ruta2 ruta2 ruta2 ruta2"
+      "ruta3 ruta3 ruta3 ruta3 ruta3 ruta3"
+      "footer footer footer footer footer footer";
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    height: 420vh;
+  }
+  #slider {
+    margin-top: 8vh;
+  }
+  #bild1 {
+    position: relative;
+    left: 350px;
+  }
+
+  #pris1 {
+    position: relative;
+    left: 350px;
+  }
+
+  #bild2 {
+    position: relative;
+    left: 1px;
+    top: 375px;
+  }
+
+  #pris2 {
+    position: relative;
+    left: 1px;
+    top: 375px;
+  }
+
+  #bild3 {
+    position: relative;
+    top: 750px;
+  }
+
+  #pris3 {
+    position: relative;
+    top: 750px;
+    right: 350px;
+  }
+  #kampanj1 {
+    position: relative;
+    left: 350px;
+  }
+  #kampanjbild1 {
+    position: relative;
+    left: 350px;
+  }
+  #kampanj2 {
+    position: relative;
+    left: 1px;
+    top: 375px;
+  }
+  #kampanjbild2 {
+    position: relative;
+    left: 1px;
+    top: 375px;
+  }
+
+  #kampanj3 {
+    position: relative;
+    top: 750px;
+  }
+  #kampanjbild3 {
+    position: relative;
+    top: 750px;
+  }
+
+  #wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 3% 2% 15% 37.5% 37.5% 5%;
+    grid-template-areas:
+      "- - - - - -"
+      "- - - - - -"
+      "main main main main main main"
+      "ruta2 ruta2 ruta2 ruta2 ruta2 ruta2"
+      "ruta3 ruta3 ruta3 ruta3 ruta3 ruta3"
+      "footer footer footer footer footer footer";
+  }
+}
+
+@media screen and (max-width: 950px) {
+  main {
+    display: none;
+  }
+  #Bilder {
+    display: none;
+  }
+  #pris1 {
+    height: 500px;
+  }
+  #kampanj1 {
+    left: 320px;
+  }
+  #kampanjbild3 {
+    top: 810px;
+    right: 330px;
+  }
+  #kampanj3 {
+    top: 820px;
+    right: 320px;
+  }
+  #pris1 {
+    top: 20px;
+    left: 320px;
+  }
+
+  #kr120 {
+    font-size: 30px;
+  }
+
+  #bild2 {
+    top: 400px;
+  }
+  #pris3 {
+    right: 320px;
+  }
+  #bild3 {
+    right: 330px;
+  }
+  #wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 3% 2% 45% 45% 5%;
+    grid-template-areas:
+      "- - - - - -"
+      "- - - - - -"
+      "ruta2 ruta2 ruta2 ruta2 ruta2 ruta2"
+      "ruta3 ruta3 ruta3 ruta3 ruta3 ruta3"
+      "footer footer footer footer footer footer";
+  }
+}
