@@ -21,17 +21,102 @@
         <div id="navcontainer">
           <p class="navtext" id="Hem">Hem</p>
 
-          <p class="navtext">Bilder</p>
+          <p class="navtext" id="Bilder">Bilder</p>
 
-          <p class="navtext">Produkter</p>
+          <p class="navtext" id="produkter">Produkter</p>
 
-          <p class="navtext">Kampanjer</p>
+          <p class="navtext" id="kampanjer">Kampanjer</p>
 
-          <p class="navtext">Kontakt</p>
+          <p class="navtext" id="kontakt">Kontakt</p>
         </div>
       </nav>
 
-      <main></main>
+      <main>
+        <div id="slider" tabindex="0">
+          <div id="images">
+            <img
+              class="img3"
+              src="img/img3.jpg"
+              alt="Hobbithåla"
+              width="1332"
+              height="656"
+            />
+            <img
+              class="img1"
+              src="img/img1.jpg"
+              alt="Harry Potter tåg"
+              width="1332"
+              height="656"
+            />
+            <img
+              class="img2"
+              src="img/img2.jpg"
+              alt="Star Wars Stormtrooper"
+              width="1332"
+              height="656"
+            />
+            <img
+              class="img3"
+              src="img/img3.jpg"
+              alt="Hobbithåla"
+              width="1332"
+              height="656"
+            />
+            <img
+              class="img1"
+              src="img/img1.jpg"
+              alt="Harry Potter tåg"
+              width="1332"
+              height="656"
+            />
+          </div>
+          <div id="left">
+            <img
+              src="img/arrowleft.png"
+              alt="pil åt vänster"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div id="right">
+            <img
+              src="img/arrowright.png"
+              alt="pil åt höger"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div id="radiobox">
+            <fieldset>
+              <legend></legend>
+              <input
+                type="radio"
+                tabindex="0"
+                name="radiobuttons"
+                id="radio1"
+                value=""
+              />
+              <label for="radio1" style="color: transparent">.</label>
+              <input
+                type="radio"
+                tabindex="0"
+                name="radiobuttons"
+                id="radio2"
+                value=""
+              />
+              <label for="radio2" style="color: transparent">.</label>
+              <input
+                type="radio"
+                tabindex="0"
+                name="radiobuttons"
+                id="radio3"
+                value=""
+              />
+              <label for="radio3" style="color: transparent">.</label>
+            </fieldset>
+          </div>
+        </div>
+      </main>
 
       <div id="ruta2">
         <div class="bildcontainer">
@@ -134,8 +219,53 @@
 
       <footer></footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js%22%3E"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $("#Hem").click(function () {
+        $("html,body").animate(
+          {
+            scrollTop: $("main").offset().top - 200,
+          },
+          1000
+        );
+      });
+
+      $("#Bilder").click(function () {
+        $("html,body").animate(
+          {
+            scrollTop: $("main").offset().top,
+          },
+          1000
+        );
+      });
+
+      $("#produkter").click(function () {
+        $("html,body").animate(
+          {
+            scrollTop: $("#ruta2").offset().top,
+          },
+          1000
+        );
+      });
+
+      $("#kampanjer").click(function () {
+        $("html,body").animate(
+          {
+            scrollTop: $("#ruta3").offset().top,
+          },
+          1000
+        );
+      });
+
+      $("#kontakt").click(function () {
+        $("html,body").animate(
+          {
+            scrollTop: $("footer").offset().top,
+          },
+          1000
+        );
+      });
+    </script>
     <script src="slider.js"></script>
-    <script src="script.js"></script>
   </body>
 </html>

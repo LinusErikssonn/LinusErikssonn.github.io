@@ -163,6 +163,68 @@ main {
   grid-area: main;
 }
 
+#slider {
+  cursor: pointer;
+  margin-top: 18vh;
+  margin-left: 15%;
+  height: 70vh;
+  width: 69.9%;
+  overflow: hidden;
+  position: relative;
+}
+#jsOff {
+  display: none;
+  border: 2px solid;
+  background-color: rgb(255, 0, 0);
+  font-size: 250%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 800;
+  width: 50%;
+  height: 15%;
+  position: fixed;
+  display: flex;
+  top: 35%;
+  left: 25%;
+  z-index: 10;
+  align-items: center;
+  text-align: center;
+}
+#images {
+  display: flex;
+  position: relative;
+  right: 2664px; /* 2 x picture leng */
+}
+#left {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+}
+#right {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1247px;
+}
+#radiobox {
+  display: none;
+  position: absolute;
+  top: 95%;
+  left: 600.5px;
+}
+input[type="radio"] {
+  cursor: pointer;
+  appearance: unset;
+  padding: 8px;
+  background-color: #091d38;
+  border-radius: 50%;
+}
+input[type="radio"]:checked {
+  background-color: #f2ca82;
+}
+
 #ruta2 {
   grid-area: ruta2;
   border-bottom: solid;
