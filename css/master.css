@@ -368,6 +368,21 @@ footer {
   background-color: aqua;
 }
 
+#instagram {
+  margin-left: 46%;
+  width: 50px;
+  height: 50px;
+  background: url("../img/css_sprites.png") -10px -10px;
+}
+
+#twitter {
+  margin-top: 3.5%;
+  margin-left: 5%;
+  width: 50px;
+  height: 50px;
+  background: url("../img/css_sprites.png") -80px -10px;
+}
+
 #wrapper {
   height: 100%;
   width: 100%;
