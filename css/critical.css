@@ -44,7 +44,6 @@ nav {
 }
 main {
   grid-area: main;
-  border-bottom: solid;
 }
 #maincointainer {
   display: flex;
@@ -241,12 +240,12 @@ input[type="radio"]:checked {
 
   #kampanj3 {
     position: relative;
-    top: 375px;
+    top: 430px;
     right: 350px;
   }
   #kampanjbild3 {
     position: relative;
-    top: 375px;
+    top: 430px;
     right: 350px;
   }
 
@@ -268,7 +267,7 @@ input[type="radio"]:checked {
 
 @media only screen and (max-width: 1000px) {
   body {
-    height: 420vh;
+    height: 440vh;
   }
   #slider {
     margin-top: 8vh;
@@ -308,10 +307,12 @@ input[type="radio"]:checked {
   #kampanj1 {
     position: relative;
     left: 350px;
+    top: -70px;
   }
   #kampanjbild1 {
     position: relative;
     left: 350px;
+    top: -70px;
   }
   #kampanj2 {
     position: relative;
@@ -326,11 +327,11 @@ input[type="radio"]:checked {
 
   #kampanj3 {
     position: relative;
-    top: 750px;
+    top: 810px;
   }
   #kampanjbild3 {
     position: relative;
-    top: 750px;
+    top: 800px;
   }
 
   #wrapper {
