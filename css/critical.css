@@ -113,7 +113,12 @@ input[type="radio"] {
 input[type="radio"]:checked {
   background-color: #f2ca82;
 }
-
+.img1,
+.img2,
+.img3 {
+  width: 1332px;
+  height: 656px;
+}
 #wrapper {
   height: 100%;
   width: 100%;

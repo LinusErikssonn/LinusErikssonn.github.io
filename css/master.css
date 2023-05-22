@@ -314,6 +314,15 @@ footer {
 }
 
 @media screen and (max-width: 950px) {
+  #ruta2 {
+    width: 99%;
+  }
+  #ruta3 {
+    width: 99%;
+  }
+  #footer {
+    width: 99%;
+  }
   #kampanj1 {
     left: 320px;
   }
@@ -347,5 +356,14 @@ footer {
   #bild3 {
     right: 330px;
     top: 800px;
+  }
+  #skolprojekt {
+    display: none;
+  }
+  #instagram {
+    position: absolute;
+  }
+  #twitter {
+    position: absolute;
   }
 }
